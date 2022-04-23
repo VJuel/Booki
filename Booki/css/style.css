@@ -1,0 +1,894 @@
+/************Demande***************
+
+Gris de fond:#F2F2F2
+Autre gris choisi :#868e96
+
+La chartre bleu:#0065FC
+Bleu plus claire:#DEEBFF
+
+Font-familly: "Raleway", sans-serif;
+font-size: 20px, 18px, 16px, 14px;
+
+Pixels demandé
+Flexbox plutôt que Grid
+Code validé W3C
+
+Desktop: 992px;
+Tablettes: 768px;
+Portable: 375px;
+
+Simuler présence liens href="#"
+
+
+
+/**********General*************/
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1199.98px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: #222;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 14px;
+  color: #868e96;
+}
+
+.fas {
+  padding: 9px;
+  color: #0065fc;
+  width: 40px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #c2dbff;
+  margin-right: -19px;
+  z-index: 100;
+}
+
+strong {
+  font-weight: bolder;
+  color: #222;
+}
+
+.greey {
+  color: #e7e5e5;
+  font-weight: bold;
+}
+
+.btn-filters {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn-filters:hover {
+  background-color: #eef4fc;
+}
+.card-aside-one:hover,
+.card:hover,
+.card-activity:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+
+/***********************Project*************************/
+
+/*********HEADER*********/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 44px;
+}
+
+/******Section Recherche *****/
+
+#logo /**Booki logo**/ {
+  height: 70px;
+  margin-bottom: 50px;
+}
+
+/**Paragraphe Header**/
+.found-holiday-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.found-holiday-text {
+  margin-bottom: 20px;
+}
+
+/**Formulaire**/
+
+.form-localisaion {
+  display: inline-flex;
+  max-width: 400px;
+}
+
+.input-form-localisation {
+  border: 2px solid #f2f2f2;
+  border-right: none;
+  border-left: none;
+  padding-left: 14px;
+}
+
+.input-form-localisation::placeholder {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+}
+
+.form-localisaion span.localisation {
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  border-radius: 12px 0 0 12px;
+  padding: 5px;
+}
+
+span .fas.icon-loc {
+  background: none;
+  color: #222;
+  text-align: center;
+}
+
+.icon-loc {
+  padding-top: 10px;
+}
+
+.rechercher {
+  font-family: "Raleway", sans-serif;
+  align-self: center;
+  background-color: #0065fc;
+
+  color: #fff;
+  padding: 14px 15px;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  border-radius: 0 11px 11px 0;
+  cursor: pointer;
+}
+
+button.rechercher:link,
+button.rechercher:active {
+  background-color: #227afd;
+  color: #f2f2f2;
+}
+
+/***NAV***/
+
+.lister-nav {
+  display: flex;
+  gap: 44px;
+  list-style: none;
+}
+
+.lister-nav a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+
+.lister-nav a {
+  padding: 42px 15px 0 15px;
+  text-decoration: none;
+  color: #868e96;
+}
+
+/**********Filters********/
+
+.section-filters {
+  display: flex;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.all-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.filter {
+  display: flex;
+}
+
+.text-filters-title {
+  font-size: 18px;
+  font-weight: 700;
+  align-self: center;
+}
+
+.text-filters {
+  font-weight: 600;
+  border: 2px solid #d9d9d9;
+  border-radius: 0 20px 20px 0;
+  border-left: none;
+  padding: 8px 10px 8px 25px;
+}
+
+.money {
+  font-size: 5px;
+  padding-left: 6px;
+}
+
+.person {
+  padding-left: 12px;
+}
+
+/**INFO**/
+
+.info-container {
+  display: flex;
+  gap: 24px;
+  margin: 25px 0 25px 0;
+}
+
+.info-container .fas {
+  padding: 4px 4px 4px 5.5px;
+  width: 16px;
+  height: 20px;
+  font-size: 10px;
+}
+
+.info {
+  border: 1px solid #deebff;
+  background-color: #fff;
+}
+
+.text-info {
+  align-self: center;
+}
+
+/*********Home Marseille*********/
+
+#all-container-home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+
+.all-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 12px 10px 24px 10px;
+}
+
+.home-marseille {
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  width: 790px;
+  height: 510px;
+  box-shadow: 3px 3px 15px -11px #000000;
+}
+
+.card {
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 15px;
+  width: 230px;
+  height: 180px;
+  overflow: hidden;
+  transition: transform 0.5s ease-out;
+
+  box-shadow: 5px 5px 15px -8px #000000;
+}
+
+.all-text-card {
+  padding: 2px 0 0 7px;
+}
+.title-home {
+  padding: 25px 0 5px 35px;
+}
+
+.title-card {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.look-more a {
+  font-size: 16px;
+  padding-left: 35px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.img-home {
+  width: 220px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.fa-star {
+  background: none;
+  font-size: 16px;
+  margin-right: -22px;
+}
+
+span.star {
+  display: inline-block;
+  margin-left: -8px;
+}
+
+.greey {
+  color: #e7e5e5;
+  font-weight: bold;
+}
+
+/****Aside***/
+.most-famous {
+  height: 510px;
+  width: 375px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px -11px #000000;
+}
+
+.card-aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.text-aside {
+  margin-top: 14px;
+  margin-left: 15px;
+}
+
+.card-aside-one {
+  background-color: #fff;
+  border-radius: 14px 12px 12px 14px;
+  box-shadow: 2px 3px 15px -7px #000000;
+  border: 5px solid #fff;
+  transition: transform 0.5s ease-out;
+
+  width: 320px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+}
+
+.title .most-famous {
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+.img-most-famous {
+  width: 105px;
+  height: 108px;
+  border-radius: 12px 0 0 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+
+.star-aside {
+  margin: 10px 0 0 -12px;
+}
+
+.star-aside .fa-star {
+  font-size: 14px;
+  margin-top: 24px;
+}
+
+.graphique-icon {
+  background: none;
+  color: #222;
+  transform: translate(-80%, 0);
+}
+
+.title-aside {
+  padding: 20px 0 10px 35px;
+}
+
+.title-aside i {
+  margin-left: 120px;
+}
+.title-card-aside {
+  font-size: 18px;
+}
+
+.text-card-aside {
+  font-size: 14px;
+}
+
+/*************Activité*************/
+
+#activity {
+  margin: 74px 0 44px 0;
+}
+
+.all-container-activity {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.title-activity {
+  margin-bottom: 24px;
+}
+
+.card-activity {
+  box-shadow: 5px 5px 15px -8px #000000;
+  border-radius: 11px;
+  overflow: hidden;
+  transition: transform 0.5s ease-out;
+}
+
+/****Les containers long*******/
+
+.container-long {
+  height: 424px;
+  width: 272px;
+}
+
+.container-long img {
+  height: 380px;
+  width: 272px;
+  object-fit: cover;
+}
+
+/****Les containers petit*******/
+
+.container-small-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.container-small {
+  height: 200px;
+  width: 272px;
+}
+
+.container-small img {
+  height: 160px;
+  width: 272px;
+  object-fit: cover;
+}
+
+.text-card-activity {
+  padding: 10px 0 10px 24px;
+  font-size: 14px;
+  font-weight: 700;
+}
+/*********Footer*********/
+
+.section-footer {
+  width: auto;
+  height: 150px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.all-text-container-footer {
+  display: flex;
+  gap: 235px;
+  padding: 35px 35px 0px 80px;
+}
+.list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.title-footer {
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.text-footer {
+  font-size: 12px;
+}
+
+/**************Media queries**********/
+
+@media screen and (max-width: 1199.98px) {
+  .header {
+    margin-left: 24px;
+  }
+
+  .found-holiday {
+    margin-left: 24px;
+  }
+
+  .section-filters {
+    margin-left: 24px;
+  }
+
+  .info-container {
+    margin-left: 24px;
+  }
+
+  #all-container-home {
+    justify-content: center;
+  }
+
+  .all-container-activity {
+    justify-content: center;
+  }
+  .title-activity {
+    padding-left: 74px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .header {
+    margin-left: 24px;
+  }
+
+  .found-holiday {
+    margin-left: 24px;
+  }
+
+  .section-filters {
+    margin-left: 24px;
+  }
+
+  .info-container {
+    margin-left: 24px;
+  }
+
+  .home-marseille {
+    width: 380px;
+    height: 1350px;
+  }
+
+  .home-marseille h1 {
+    font-size: 22px;
+  }
+
+  #all-container-home {
+    justify-content: center;
+  }
+
+  .title-activity {
+    text-align: center;
+  }
+
+  .all-container-activity {
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .all-text-container-footer {
+    justify-content: space-between;
+    gap: 44px;
+  }
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 900px) /**Tablettes**/ {
+  .home-marseille {
+    width: 768px;
+    height: 505px;
+  }
+
+  .home-marseille h1 {
+    text-align: center;
+  }
+
+  h2.title-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+  }
+
+  .title-aside i {
+    display: none;
+  }
+
+  .title.look-more {
+    padding-bottom: 100px;
+    font-weight: 700;
+  }
+
+  .most-famous {
+    width: 768px;
+    height: 410px;
+  }
+  .card-aside {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    padding-top: 12px;
+  }
+  .card-aside-one {
+    width: 220px;
+    height: 300px;
+    flex-direction: column;
+    border-radius: 15px;
+  }
+
+  .img-most-famous {
+    width: 210px;
+    height: 160px;
+    border-radius: 14px 14px 0 0;
+  }
+
+  .text-aside {
+    font-size: 18px;
+  }
+  .title-card {
+    font-size: 16px;
+  }
+  .text-card-aside {
+    margin: 0;
+    width: 90px;
+  }
+  .middle {
+    margin-left: 15px;
+  }
+
+  .aside .title-card {
+    padding-bottom: 18px;
+  }
+
+  .title-activity {
+    font-size: 22px;
+  }
+  .fa-star {
+    padding: 2px 0 0 5px;
+    font-size: 14px;
+    margin-right: -24px;
+  }
+}
+
+@media screen and (max-width: 375px) /***Iphone 8**/ {
+  .text {
+    font-weight: 500;
+    color: #222;
+  }
+
+  .header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #icon-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  #logo {
+    margin: 0;
+    height: 40px;
+  }
+  /***Nav***/
+  .lister-nav {
+    gap: 0;
+    justify-content: center;
+    margin-bottom: 24px;
+  }
+
+  .list-nav a {
+    display: block;
+    border: none;
+    border-bottom: 2px solid #d4dbe2;
+    color: #222;
+    font-weight: 600;
+    padding: 12px 40px;
+    font-size: 16px;
+    width: 180px;
+  }
+
+  .list-nav a:hover {
+    border-top: none;
+    color: #0065fc;
+    border-bottom: 2px solid #0065fc;
+  }
+  /***Found-holiday***/
+
+  .found-holiday-title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  /****Formulaire de Recherche/***/
+  .form-localisaion {
+    font-size: 13px;
+    padding-left: 10px;
+  }
+  .input-form-localisation {
+    padding-right: 50px;
+    position: relative;
+  }
+  .input-form-localisation::placeholder {
+    font-weight: 700;
+  }
+  .form-localisaion span {
+    padding: 4px 5px;
+  }
+  .rechercher span {
+    display: none;
+  }
+  button.rechercher {
+    position: absolute;
+    border-radius: 15px;
+    right: 50px;
+  }
+  .rechercher::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+
+  .fa-solid {
+    height: 30px;
+    width: 30px;
+    color: #222;
+  }
+
+  /***Filters***/
+
+  .section-filters {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-filters-title {
+    font-size: 16px;
+    font-weight: 600;
+    align-self: flex-start;
+  }
+  .all-filters {
+    width: 300px;
+    height: 100px;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  /*****Les plus populaires***/
+
+  .most-famous {
+    order: 1;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .home-marseille {
+    order: 2;
+  }
+  .card-aside {
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .card-aside-one {
+    height: 125px;
+    box-shadow: 2px 3px 15px -11px #000000;
+  }
+
+  .title .card-aside-one {
+    font-weight: bold;
+  }
+  .title-aside {
+    padding-left: 30px;
+  }
+  .title-aside i {
+    margin-left: 120px;
+  }
+  .text-aside {
+    margin-left: 20px;
+    height: 100px;
+    position: relative;
+  }
+  .img-most-famous {
+    height: 115px;
+  }
+  span.star-aside {
+    width: 33px;
+    position: absolute;
+    bottom: 5px;
+  }
+
+  span.star-aside {
+    margin-left: -5px;
+    font-size: 12px;
+  }
+
+  /*****Home-Marseille**/
+
+  .all-card {
+    gap: 15px;
+    padding-bottom: 18px;
+  }
+  .home-marseille {
+    background-color: #fff;
+    box-shadow: none;
+    height: 1290px;
+  }
+  .card {
+    box-shadow: 2px 3px 15px -11px #000000;
+    width: 320px;
+  }
+
+  .title-home {
+    font-weight: 700;
+    padding-left: 32px;
+  }
+  .title-card {
+    margin-top: 3px;
+    font-weight: 700;
+  }
+  .img-home {
+    width: 310px;
+    height: 105px;
+  }
+
+  span .fa-star {
+    display: initial;
+    font-size: 12px;
+    width: 40px;
+    margin-left: -5px;
+    margin-right: -13px;
+  }
+  .home-marseille .look-more {
+    font-weight: 700;
+  }
+
+  /****Activité***/
+  #activity {
+    margin: 0;
+  }
+
+  .title-activity {
+    padding: 25px 0 5px 35px;
+    text-align: initial;
+    font-weight: 700;
+    font-size: 22px;
+  }
+  .card-activity {
+    width: 320px;
+    height: 180px;
+    box-shadow: 2px 3px 15px -11px #000000;
+  }
+
+  .text-card-activity {
+    font-weight: 700;
+  }
+  .container-long img {
+    width: 320px;
+    height: 130px;
+  }
+  .container-small img {
+    width: 320px;
+    height: 130px;
+  }
+
+  /***Footer***/
+
+  .section-footer {
+    margin-top: 24px;
+    height: auto;
+    padding-bottom: 24px;
+  }
+  .all-text-container-footer {
+    flex-direction: column;
+  }
+}
